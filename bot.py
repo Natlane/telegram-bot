@@ -203,6 +203,9 @@ print("Bot aktif (PostgreSQL)...")
 
 TOKEN = os.getenv("8617978089:AAGP44H_kMftgJrvmJyPnEYeqUA4dzmMjMQ")
 
+if not TOKEN:
+    raise Exception("TOKEN tidak ditemukan!")
+
 app = ApplicationBuilder().token(TOKEN).build()
 
 app.add_handler(CommandHandler("start", start))
