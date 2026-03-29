@@ -1,0 +1,4 @@
+python-telegram-bot
+apscheduler
+dateparser
+psycopg2-binary
