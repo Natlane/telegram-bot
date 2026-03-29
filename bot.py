@@ -201,7 +201,7 @@ async def list_tugas(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # ================= MAIN =================
 print("Bot aktif (PostgreSQL)...")
 
-TOKEN = os.getenv("8617978089:AAGP44H_kMftgJrvmJyPnEYeqUA4dzmMjMQ")
+TOKEN = os.getenv("TOKEN")
 
 if not TOKEN:
     raise Exception("TOKEN tidak ditemukan!")
